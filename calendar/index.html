@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="calendar-header">
+                <div class="month-picker">
+                    <span class="month-change" id="prev-month">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span id="month">December</span>
+                    <span class="month-change" id="next-month">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="year-picker">
+                    <span class="year-change" id="prev-year">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span id="year">2023</span>
+                    <span class="year-change" id="next-year">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-week-days">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days"></div>
+            </div>
+            <div class="calendar-footer">
+                <div class="toggle">
+                    <span>Dark Mode</span>
+                    <div class="dark-mode-switch">
+                        <div class="dark-mode-switch-ident"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="month-list"></div>
+        </div>
+        <div class="event-container">
+            <h2>Events</h2>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Add Event</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Name" class="event-name">
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Time" class="event-time">
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Add Event</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

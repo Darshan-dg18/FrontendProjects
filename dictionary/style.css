@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #f4f4f4;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    background: #8052ec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #6b40d8;
+}
+
+.result {
+    display: none;
+}
+
+.word-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.word {
+    font-size: 32px;
+    color: #333;
+}
+
+.pronunciation {
+    width: 40px;
+    height: 40px;
+    background: #8052ec;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.pronunciation:hover {
+    background: #6b40d8;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.word-type {
+    color: #8052ec;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.word-pronunciation {
+    color: #666;
+}
+
+.word-meaning {
+    margin-bottom: 20px;
+}
+
+.word-meaning h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.word-meaning p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.word-example {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.word-example h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.word-example p {
+    color: #666;
+    font-style: italic;
+}
+
+.synonyms {
+    margin-top: 20px;
+}
+
+.synonyms h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.synonyms .synonyms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.synonyms .synonym-item {
+    background: #f4f4f4;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #666;
+}
+
+.error {
+    display: none;
+    color: #ff5555;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .word {
+        font-size: 24px;
+    }
+}

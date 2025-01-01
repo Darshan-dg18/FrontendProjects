@@ -1,0 +1,20 @@
+const country_codes = {
+    "USD": {name: "US Dollar", flag: "us"},
+    "EUR": {name: "Euro", flag: "eu"},
+    "GBP": {name: "British Pound", flag: "gb"},
+    "INR": {name: "Indian Rupee", flag: "in"},
+    "AUD": {name: "Australian Dollar", flag: "au"},
+    "CAD": {name: "Canadian Dollar", flag: "ca"},
+    "JPY": {name: "Japanese Yen", flag: "jp"},
+    "CNY": {name: "Chinese Yuan", flag: "cn"},
+    "NZD": {name: "New Zealand Dollar", flag: "nz"},
+    "CHF": {name: "Swiss Franc", flag: "ch"},
+    "ZAR": {name: "South African Rand", flag: "za"},
+    "RUB": {name: "Russian Ruble", flag: "ru"},
+    "SGD": {name: "Singapore Dollar", flag: "sg"},
+    "HKD": {name: "Hong Kong Dollar", flag: "hk"},
+    "SEK": {name: "Swedish Krona", flag: "se"},
+    "KRW": {name: "South Korean Won", flag: "kr"},
+    "BRL": {name: "Brazilian Real", flag: "br"},
+    "MXN": {name: "Mexican Peso", flag: "mx"}
+};
